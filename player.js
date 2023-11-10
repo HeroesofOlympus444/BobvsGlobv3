@@ -46,7 +46,6 @@ export class Player {
     onGround() {
         return this.y >= this.game.height - this.height - 110
     }
-
     onCollision() {
         this.game.enemies.forEach(enemy => {
             if (enemy.x < this.x + this.width &&
